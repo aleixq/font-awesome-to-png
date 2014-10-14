@@ -1,3 +1,24 @@
+Fork of odyniec/font-awesome-to-png to add some scripts to be able to create markers from font-awesome
+
+The basic change is that it syncs (in a rude and dirty way) the list of items from site http://fortawesome.github.io/Font-Awesome/cheatsheet/ instead of a hard coded way. 
+There are also some bash scripts:
+
+    getAndBuild.sh:
+Builds a set of icons of 32px to ./out/ directory.
+    
+    add-marker.sh
+Composes a marker with a red marker in this repo (taken from https://github.com/lvoogdt/Leaflet.awesome-markers), for each icon in ./out/ directory . After that stores all these new markers to ./out-marker/
+    
+    makeIni.sh 
+Running it inside of ./out-marker/ directory will create a basic ini file to be used for fantastic https://www.drupal.org/project/getlocations drupal module .
+
+
+    
+After that rename ./out-marker/ to the marker kit name that you choose, and ./out-marker/out-marker.ini too. Copy the directory in sites/all/libraries/getlocations/markers/ and then you can use icons in http://yourdrupal.org/admin/config/services/getlocations
+
+
+---------Original RM---------------------
+
 Font Awesome to PNG
 ===================
 
