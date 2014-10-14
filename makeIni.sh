@@ -17,7 +17,7 @@ shapecoords = 0,0,$w,$h
 shapetype = 'rect'
 
 "
-for file in *; 
+for file in *.png; 
 do  
 	output+="[`basename $file .png`]\nname = \"`basename $file .png`\"\nsequence =\"$file\"\n\n" ; 
 done
