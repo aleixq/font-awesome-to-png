@@ -7,7 +7,7 @@ There are also some bash scripts:
 Builds a set of icons of 32px to ./out/ directory.
     
     add-marker.sh
-Composes a marker with a red marker in this repo (taken from https://github.com/lvoogdt/Leaflet.awesome-markers), for each icon in ./out/ directory . After that stores all these new markers to ./out-marker/
+Composes a marker with a red marker in this repo (taken from https://github.com/lvoogdt/Leaflet.awesome-markers), for each icon in ./out/ directory . After that stores all these new markers to ./out-marker/ or where specified by -o option
     
     makeIni.sh 
 Running it inside of ./out-marker/ directory will create a basic ini file to be used for fantastic https://www.drupal.org/project/getlocations drupal module .
